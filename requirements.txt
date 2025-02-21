@@ -1,0 +1,11 @@
+Flask
+request
+jsonify
+flask_cors  CORS
+google.generativeai as ai
+datetime
+timedelta
+pytz
+re
+requests
+time
