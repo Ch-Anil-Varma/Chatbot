@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 let backgroundSet = false;
 
 function sendMessage() {
@@ -140,4 +140,4 @@ document.getElementById("user-input").addEventListener("keypress", function(even
         sendMessage();
     }
 });
->>>>>>> d62eecc (Initial commit)
+
