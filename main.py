@@ -23,6 +23,10 @@ chat = model.start_chat()
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend communication
+@app.route("/")
+def home():
+    return "Flask server is running!"
+
 
 def get_day_and_date(offset=0):
     timezone = pytz.timezone("Asia/Kolkata")  # Set timezone (IST)
@@ -70,6 +74,7 @@ def detect_intent(user_message):
             return intent
     return "chat"
 
+
 @app.route("/chat", methods=["POST"])
 def chat_with_ai():
     data = request.json
@@ -107,4 +112,5 @@ def chat_with_ai():
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))  # Use Render's assigned port or default to 5000
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=port, debug=True)
+
