@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS
 import google.generativeai as ai
 from datetime import datetime, timedelta
@@ -25,7 +25,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for frontend communication
 @app.route("/")
 def home():
-    return "Flask server is running!"
+    return render_template("index.html")
 
 
 def get_day_and_date(offset=0):
