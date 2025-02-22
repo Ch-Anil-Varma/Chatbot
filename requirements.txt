@@ -1,7 +1,7 @@
 Flask
 request
 jsonify
-flask-cors
+Flask-cors
 google.generativeai
 datetime
 timedelta
