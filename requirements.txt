@@ -6,6 +6,5 @@ google.generativeai
 datetime
 timedelta
 pytz
-re
 requests
 time
