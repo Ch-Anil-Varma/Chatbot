@@ -1,9 +1,0 @@
-Flask
-requests
-jsonify
-Flask-cors
-google.generativeai
-datetime
-timedelta
-pytz
-requests
